@@ -1,0 +1,80 @@
+.project-card {
+	display: block;
+	position: relative;
+	padding-top: 100%;
+	border-radius: 10px;
+	box-shadow: 0 14px 38px 0 rgba($black, 0.5);
+	overflow: hidden;
+	text-decoration: none;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 50px 35px 32px;
+	}
+
+	.project-card-name {
+		display: block;
+		margin-bottom: 15px;
+	}
+
+	&__overlay {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: $black;
+		opacity: 0;
+		transition: opacity 0.3;
+	}
+
+	.button {
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&:hover,
+	&:focus {
+		.project-card__overlay {
+			opacity: 0.5;
+		}
+
+		.button {
+			display: flex;
+		}
+	}
+
+	&_geo {
+		background-color: #69a6e3;
+	}
+
+	&_sadko {
+		background-color: #537699;
+	}
+
+	&_garbage {
+		background-color: #152049;
+	}
+
+	&_celsus {
+		background-color: #3e4972;
+	}
+
+	&_overhaul {
+		background-color: #83b1de;
+	}
+
+	&_building {
+		background-color: #1d5c9c;
+	}
+}

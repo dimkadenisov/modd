@@ -1,0 +1,14 @@
+mixin project-card(props = {})
+  include project-card-name
+  include project-card-img
+  include button
+
+  - const { name, imgSrc } = props;
+
+  a(href="").project-card&attributes(attributes)
+    .project-card__content
+      +project-card-name= name
+      +project-card-img(src= imgSrc, alt= name)
+    .project-card__overlay
+    +button({tag: 'div'})
+      |Открыть

@@ -1,4 +1,6 @@
 mixin header(props = {})
+  include logo
 
   .header&attributes(attributes)
-    div biba
+    .container.container_wide
+      +logo

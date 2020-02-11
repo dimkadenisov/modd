@@ -1,0 +1,34 @@
+mixin projects-list(props = {})
+  include project-card
+
+  ul.projects-list&attributes(attributes)
+    li.projects-list__item
+      +project-card({
+        name: 'Геоинформационный портал Калужской области',
+        imgSrc: 'assets/img/map.svg'
+      })(class="project-card_geo")
+    li.projects-list__item
+      +project-card({
+        name: 'Система электронного документооборота «Садко: обращение граждан»',
+        imgSrc: 'assets/img/kanban.svg'
+      })(class="project-card_sadko")
+    li.projects-list__item
+      +project-card({
+        name: 'Мониторинг  уборки дорог в Калуге',
+        imgSrc: 'assets/img/garbage.svg'
+      })(class="project-card_garbage")
+    li.projects-list__item
+      +project-card({
+        name: 'Технология выявления онкологических заболеваний CELSUS',
+        imgSrc: 'assets/img/celsus.png'
+      })(class="project-card_celsus")
+    li.projects-list__item
+      +project-card({
+        name: 'ИС «Фонд капитального ремонта Калужской области»',
+        imgSrc: 'assets/img/builders.svg'
+      })(class="project-card_overhaul")
+    li.projects-list__item
+      +project-card({
+        name: 'ИС «Обеспечение градостроительной деятельности Калужской области»',
+        imgSrc: 'assets/img/building.svg'
+      })(class="project-card_building")

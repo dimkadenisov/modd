@@ -1,7 +1,10 @@
 extends ../components/page
+include ../components/projects-list
 
 block title
   |Главная страница
 
 block content
-  div biba
+  main
+    .container
+      +projects-list
