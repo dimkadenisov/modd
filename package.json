@@ -42,6 +42,8 @@
     "stylelint-config-recommended-scss": "^3.3.0",
     "stylelint-scss": "^3.9.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "objectFitPolyfill": "^2.3.0"
+  },
   "description": "ministry of digital development"
 }

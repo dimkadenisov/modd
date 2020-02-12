@@ -3,7 +3,9 @@
 	align-items: center;
 	justify-content: center;
 	min-height: 57px;
+	padding-top: 12px;
 	padding-right: 60px;
+	padding-bottom: 12px;
 	padding-left: 60px;
 	border: none;
 	background-color: $red;
@@ -15,7 +17,7 @@
 	cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 443px) {
 	.button {
 		min-height: 48px;
 		font-size: 16px;

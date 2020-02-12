@@ -11,6 +11,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: space-between;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -20,8 +21,13 @@
 	}
 
 	.project-card-name {
-		display: block;
+		flex-shrink: 0;
 		margin-bottom: 15px;
+	}
+
+	.project-card-img {
+		flex-grow: 1;
+		max-width: 90%;
 	}
 
 	&__overlay {
@@ -44,7 +50,8 @@
 	}
 
 	&:hover,
-	&:focus {
+	&:focus,
+	&:active {
 		.project-card__overlay {
 			opacity: 0.5;
 		}

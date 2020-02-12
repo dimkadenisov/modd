@@ -5,10 +5,10 @@ mixin project-card(props = {})
 
   - const { name, imgSrc } = props;
 
-  a(href="").project-card&attributes(attributes)
+  a(target="blank").project-card&attributes(attributes)
     .project-card__content
       +project-card-name= name
-      +project-card-img(src= imgSrc, alt= name)
+      +project-card-img(src= imgSrc, alt= name data-object-fit="contain")
     .project-card__overlay
     +button({tag: 'div'})
       |Открыть

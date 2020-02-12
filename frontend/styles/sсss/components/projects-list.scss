@@ -17,6 +17,10 @@
 
 @media screen and (max-width: 1370px) {
 	.projects-list {
+		max-width: 862px;
+		margin-right: auto;
+		margin-left: auto;
+
 		&__item {
 			flex-basis: calc((100% - 34px) / 2);
 
@@ -31,8 +35,10 @@
 	}
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 921px) {
 	.projects-list {
+		max-width: 414px;
+
 		&__item {
 			flex-basis: 100%;
 			max-width: 638px;
